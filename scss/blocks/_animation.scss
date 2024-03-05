@@ -1,0 +1,18 @@
+
+
+//---------animation----------
+
+.anim-active{
+    transition: all ease-in-out 1s;
+    transform: translate(0px, 0px) rotate3d(0, 0, 0, 0deg);
+    opacity: 1;
+}
+
+.banner__link{
+    transition-delay: 1.6s;
+}
+
+
+
+
+

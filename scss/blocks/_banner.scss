@@ -1,0 +1,121 @@
+
+
+.banner::after{
+    content: "";
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%,
+                rgba(0, 0, 0, 0.6) 10%,
+                rgba(0, 0, 0, 0.4) 50%,
+                rgba(0, 0, 0, 0.6) 90%,
+                rgba(0, 0, 0, 0.8) 100%);
+}
+
+.banner {
+
+    min-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    background-image:
+        url("../../img/sliders/headerSlider/1.jpg");
+    background-size: cover;
+    transition: all ease-in-out 1s;
+
+    &__inner{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+
+    // .baner__scrolled-down
+
+    &__scrolled-down {
+        position: absolute;
+        top: 70%;
+        left: -40px;
+        transform: rotate(-90deg);
+    }
+
+    // .baner__link
+
+    &__link {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(160px, 0px);
+        opacity: 0;
+
+        color: $text-color;
+        font-family: Tomato Grotesk;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+
+        &::after {
+            content: url("/img/header/icon.svg");
+
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -50px;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    // .baner__content
+
+    &__content {
+        width: 100%;
+    }
+
+    // .baner__title
+
+    &__title {}
+
+    // .baner__slider
+
+    &__slider {}
+
+
+    &__subtitle {
+        max-width: clamp(18.125rem, 13.306rem + 24.1vw, 43.125rem);
+        margin-top: 25px;
+    }
+
+    &__btn {
+        margin-left: -23px;
+        margin-top: 30px;
+    }
+
+}
+
+
+.title__item {
+    font-family: Bayon;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(220, 193, 82, 1);
+    font-size: clamp(2.188rem, 0.801rem + 6.93vw, 6rem);
+    font-weight: 400;
+    line-height: clamp(2.188rem, 0.71rem + 7.39vw, 6.25rem);
+    letter-spacing: 2.88px;
+    text-transform: capitalize;
+    display: inline-block;
+    transform: translate(60px, 0px) rotate3d(0, 1, 0, 60deg);
+    opacity: 0;
+}

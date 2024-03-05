@@ -1,0 +1,65 @@
+
+
+.header {
+
+    position: fixed;
+    width: 100%;
+	z-index: 50;
+
+
+		// .header__container
+
+		&__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+		}
+
+		// .header__menu
+
+		&__menu {
+		}
+
+		// .header__logo
+
+		&__logo {
+		}
+
+		// .header__btn
+
+		&__btn {
+		}
+}
+
+.menu {
+    display: flex;
+	align-items: center;
+    gap: 35px;
+
+		// .menu__item
+
+		&__item {
+            list-style-type: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 86px;
+			clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+		}
+
+		// .menu__link
+
+		&__link {
+
+		}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+// //Fonts
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+
+
+body {
+      // font-family: $font-main;
+      // background-color: #000;
+      color: $text-color;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+}
+
+
+//Links
+a {
+      color: $text-color;
+      transition: all 0.2s ease-in-out;
+      text-align: center;
+      // font-family: "Tomato Grotesk";
+      font-weight: 500;
+
+      &:hover {
+            transition: all ease-in-out 0.5s;
+            color: $linkColor;
+      }
+}
+
+
+//--------active style--------
+.menu__item--active {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 86px;
+      height: 59px;
+      clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 100%, 0 70%);
+      background: linear-gradient(1deg, rgba(220, 193, 82, 0.3) 16.95%, rgba(220, 193, 82, 0) 100%);
+
+      a {
+            color: $linkColor
+      }
+
+      transition: all ease-in-out 1s;
+}
+
+
+
+
+// //--------------containers------------------
+
+.container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 0 15px;
+}
+
+// .container-sm{
+//       max-width: 824px;
+//       margin: 0 auto;
+//       padding: 0 15px;
+//       overflow: hidden;
+// }
+
+
+
+// //--------titles------------
+
+.subtitle {
+      color: $text-color;
+      font-family: Tomato Grotesk;
+      font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem);
+      font-weight: 300;
+      line-height: 30px;
+}
+
+.title {
+      color: $text-color;
+      // font-family: Bayon;
+      // font-size: clamp(2.188rem, 0.801rem + 6.93vw, 6rem);
+      font-size: clamp(2.5rem, 1.825rem + 3.37vw, 6rem);
+      font-weight: 400;
+      // line-height: clamp(2.188rem, 0.71rem + 7.39vw, 6.25rem);
+      line-height: clamp(1.875rem, 1.032rem + 4.22vw, 6.25rem);
+      letter-spacing: 2.88px;
+      text-transform: capitalize;
+      ;
+      // @include mediaMobile{
+      //       font-size: 30px;
+      // }
+}
+
+
+
+
+// //------------Forms----------------
+
+// input{
+//       background: $input-color;
+//       text-align: center;
+//       padding: 12px 0;
+//       color: $text-color;
+
+//       &:focus{
+//             background-color: rgba(255, 255, 255, 0.3);
+//       }
+
+//       &::placeholder{
+//             color: $text-input-color;
+//             font-family: $font-main;
+//             font-size: 14px;
+//             line-height: 27px;
+//       }
+// }
+
+
+// .none{
+//       display: none;
+// }
