@@ -16,16 +16,19 @@ let myImageSlider = new Swiper(".banner__slider", {
   loop: false,
 
   // Отступ между слайдами
-  spaceBetween: 36,
+  spaceBetween: 15,
 
   // Количество слайдов для показа
-  slidesPerView: 1,
+  slidesPerView: 2,
 
   // Брейк поинты (адаптив)
   // Ширина экрана
   breakpoints: {
-    670: {
-      slidesPerView: 2,
+    // 670: {
+    //   slidesPerView: 2,
+    // },
+    991: {
+      spaceBetween: 36,
     },
   },
 });

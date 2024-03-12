@@ -1,16 +1,16 @@
 
 //burger-menu
 
-// let navIcon = document.querySelector(".burger-menu__icon");
-// let navBar = document.querySelector(".burger-menu");
-// let navLink = document.querySelectorAll('.nav-link');
+let navIcon = document.querySelector(".header__burger");
+let navBar = document.querySelector(".header__container");
+let navLink = document.querySelectorAll('.nav-link');
 
-// function iconActive() {
-//   navIcon.classList.toggle("burger-menu__icon--active");
-//   navBar.classList.toggle("burger-menu--active");
-// };
+function iconActive() {
+  navIcon.classList.toggle("active");
+  navBar.classList.toggle("active");
+};
 
-// navIcon.addEventListener("click", iconActive);
+navIcon.addEventListener("click", iconActive);
 
 // function clickLink() {
 //   if (navIcon.classList.contains('burger-menu__icon--active') && navBar.classList.contains('burger-menu__nav--active')) {
@@ -113,22 +113,4 @@ import changeFon from "./modules/changeFon.js";
 changeFon();
 
 
-
-
-
-
-
-// function x(arr) {
-//   arr.forEach((element) => {
-//     element.addEventListener("click", () => {
-//       arr.forEach((element) => {
-//         if (element.classList.contains("list__item--active")) {
-//           element.classList.remove("list__item--active");
-//         }
-//       });
-//       element.classList.add("list__item--active");
-//     });
-//   });
-// };
-// x(arrLi)
 

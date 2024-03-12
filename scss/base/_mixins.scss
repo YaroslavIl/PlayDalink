@@ -10,3 +10,15 @@
     @content;
     }
 }
+
+@mixin mediaDesktop {
+    @media(max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin mediaDesktopSm {
+    @media(max-width: $desktopSm) {
+        @content;
+    }
+}

@@ -13,6 +13,9 @@
 <body>
     <div class="wrapper">
         <header class="header none1">
+            <div class="header__burger">
+                <span></span>
+            </div>
             <div class="header__container container">
                 <nav class="header__menu menu">
                     <li class="menu__item menu__item--active">
@@ -26,7 +29,7 @@
                     </li>
                 </nav>
                 <div class="header__logo">
-                    <img src="/img/header/Logo.svg" alt="logo">
+                    <img src="./img/header/Logo.svg" alt="logo">
                 </div>
                 <div class="header__btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="198" height="89" viewBox="0 0 198 89" fill="none">
@@ -168,174 +171,176 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-container banner__slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card" data-image-url="./img/sliders/headerSlider/1.jpg">
-                                    <div class="card__top-pseudo"></div>
-                                    <div class="card__body">
-                                        <div class="card__img">
-                                            <img class="card__img-item" 
-                                                src="./img/sliders/headerSlider/1.jpg" alt="">
-                                        </div>
-                                        <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
-                                            fill="none">
-                                            <path
-                                                d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
-                                                stroke="white" stroke-opacity="0.7" stroke-width="2" />
-                                        </svg>
-                                        <div class="card__blur">
-                                            <h6 class="card__title">
-                                                Got of War
-                                            </h6>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
-                                                viewBox="0 0 498 77" fill="none">
-                                                <g filter="url(#filter0_b_118_75)">
-                                                    <path
-                                                        d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
-                                                        fill="black" fill-opacity="0.5" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                                        <feComposite in2="SourceAlpha" operator="in"
-                                                            result="effect1_backgroundBlur_118_75" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_backgroundBlur_118_75" result="shape" />
-                                                    </filter>
-                                                </defs>
+                    <div class="banner__slider-wrapper">
+                        <div class="swiper-container banner__slider start-anim">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card" data-image-url="./img/sliders/headerSlider/1.jpg">
+                                        <div class="card__top-pseudo"></div>
+                                        <div class="card__body">
+                                            <div class="card__img">
+                                                <img class="card__img-item" 
+                                                    src="./img/sliders/headerSlider/1.jpg" alt="">
+                                            </div>
+                                            <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
+                                                fill="none">
+                                                <path
+                                                    d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
+                                                    stroke="white" stroke-opacity="0.7" stroke-width="2" />
                                             </svg>
+                                            <div class="card__blur">
+                                                <h6 class="card__title">
+                                                    Got of War
+                                                </h6>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
+                                                    viewBox="0 0 498 77" fill="none">
+                                                    <g filter="url(#filter0_b_118_75)">
+                                                        <path
+                                                            d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
+                                                            fill="black" fill-opacity="0.5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
+                                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_118_75" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_118_75" result="shape" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
                                         </div>
+                                        <div class="card__bottom-pseudo"></div>
                                     </div>
-                                    <div class="card__bottom-pseudo"></div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card" data-image-url="./img/sliders/headerSlider/2.jpg">
-                                    <div class="card__top-pseudo"></div>
-                                    <div class="card__body">
-                                        <div class="card__img">
-                                            <img class="card__img-item"
-                                                src="./img/sliders/headerSlider/2.jpg" alt="">
-                                        </div>
-                                        <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
-                                            fill="none">
-                                            <path
-                                                d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
-                                                stroke="white" stroke-opacity="0.7" stroke-width="2" />
-                                        </svg>
-                                        <div class="card__blur">
-                                            <h6 class="card__title">
-                                                Got of War
-                                            </h6>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
-                                                viewBox="0 0 498 77" fill="none">
-                                                <g filter="url(#filter0_b_118_75)">
-                                                    <path
-                                                        d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
-                                                        fill="black" fill-opacity="0.5" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                                        <feComposite in2="SourceAlpha" operator="in"
-                                                            result="effect1_backgroundBlur_118_75" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_backgroundBlur_118_75" result="shape" />
-                                                    </filter>
-                                                </defs>
+                                <div class="swiper-slide">
+                                    <div class="card" data-image-url="./img/sliders/headerSlider/2.jpg">
+                                        <div class="card__top-pseudo"></div>
+                                        <div class="card__body">
+                                            <div class="card__img">
+                                                <img class="card__img-item"
+                                                    src="./img/sliders/headerSlider/2.jpg" alt="">
+                                            </div>
+                                            <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
+                                                fill="none">
+                                                <path
+                                                    d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
+                                                    stroke="white" stroke-opacity="0.7" stroke-width="2" />
                                             </svg>
+                                            <div class="card__blur">
+                                                <h6 class="card__title">
+                                                    Got of War
+                                                </h6>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
+                                                    viewBox="0 0 498 77" fill="none">
+                                                    <g filter="url(#filter0_b_118_75)">
+                                                        <path
+                                                            d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
+                                                            fill="black" fill-opacity="0.5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
+                                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_118_75" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_118_75" result="shape" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
                                         </div>
+                                        <div class="card__bottom-pseudo"></div>
                                     </div>
-                                    <div class="card__bottom-pseudo"></div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card" data-image-url="./img/sliders/headerSlider/3.jpg">
-                                    <div class="card__top-pseudo"></div>
-                                    <div class="card__body">
-                                        <div class="card__img">
-                                            <img class="card__img-item"
-                                                src="./img/sliders/headerSlider/3.jpg" alt="">
-                                        </div>
-                                        <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
-                                            fill="none">
-                                            <path
-                                                d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
-                                                stroke="white" stroke-opacity="0.7" stroke-width="2" />
-                                        </svg>
-                                        <div class="card__blur">
-                                            <h6 class="card__title">
-                                                The Last of Us 2
-                                            </h6>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
-                                                viewBox="0 0 498 77" fill="none">
-                                                <g filter="url(#filter0_b_118_75)">
-                                                    <path
-                                                        d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
-                                                        fill="black" fill-opacity="0.5" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                                        <feComposite in2="SourceAlpha" operator="in"
-                                                            result="effect1_backgroundBlur_118_75" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_backgroundBlur_118_75" result="shape" />
-                                                    </filter>
-                                                </defs>
+                                <div class="swiper-slide">
+                                    <div class="card" data-image-url="./img/sliders/headerSlider/3.jpg">
+                                        <div class="card__top-pseudo"></div>
+                                        <div class="card__body">
+                                            <div class="card__img">
+                                                <img class="card__img-item"
+                                                    src="./img/sliders/headerSlider/3.jpg" alt="">
+                                            </div>
+                                            <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
+                                                fill="none">
+                                                <path
+                                                    d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
+                                                    stroke="white" stroke-opacity="0.7" stroke-width="2" />
                                             </svg>
+                                            <div class="card__blur">
+                                                <h6 class="card__title">
+                                                    The Last of Us 2
+                                                </h6>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
+                                                    viewBox="0 0 498 77" fill="none">
+                                                    <g filter="url(#filter0_b_118_75)">
+                                                        <path
+                                                            d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
+                                                            fill="black" fill-opacity="0.5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
+                                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_118_75" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_118_75" result="shape" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
                                         </div>
+                                        <div class="card__bottom-pseudo"></div>
                                     </div>
-                                    <div class="card__bottom-pseudo"></div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card" data-image-url="./img/sliders/headerSlider/4.webp">
-                                    <div class="card__top-pseudo"></div>
-                                    <div class="card__body">
-                                        <div class="card__img">
-                                            <img class="card__img-item"
-                                                src="./img/sliders/headerSlider/4.webp" alt="">
-                                        </div>
-                                        <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
-                                            fill="none">
-                                            <path
-                                                d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
-                                                stroke="white" stroke-opacity="0.7" stroke-width="2" />
-                                        </svg>
-                                        <div class="card__blur">
-                                            <h6 class="card__title">
-                                                Just Cause 3
-                                            </h6>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
-                                                viewBox="0 0 498 77" fill="none">
-                                                <g filter="url(#filter0_b_118_75)">
-                                                    <path
-                                                        d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
-                                                        fill="black" fill-opacity="0.5" />
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
-                                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
-                                                        <feComposite in2="SourceAlpha" operator="in"
-                                                            result="effect1_backgroundBlur_118_75" />
-                                                        <feBlend mode="normal" in="SourceGraphic"
-                                                            in2="effect1_backgroundBlur_118_75" result="shape" />
-                                                    </filter>
-                                                </defs>
+                                <div class="swiper-slide">
+                                    <div class="card" data-image-url="./img/sliders/headerSlider/4.webp">
+                                        <div class="card__top-pseudo"></div>
+                                        <div class="card__body">
+                                            <div class="card__img">
+                                                <img class="card__img-item"
+                                                    src="./img/sliders/headerSlider/4.webp" alt="">
+                                            </div>
+                                            <svg class="card__border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 487 251"
+                                                fill="none">
+                                                <path
+                                                    d="M1 42.7333L43.4374 1H243.5H441.62L486 42.7464L486 208.267L443.562 250H43.4374L1 208.267V153.915V42.7333Z"
+                                                    stroke="white" stroke-opacity="0.7" stroke-width="2" />
                                             </svg>
+                                            <div class="card__blur">
+                                                <h6 class="card__title">
+                                                    Just Cause 3
+                                                </h6>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="498" height="77"
+                                                    viewBox="0 0 498 77" fill="none">
+                                                    <g filter="url(#filter0_b_118_75)">
+                                                        <path
+                                                            d="M0 0C8.69411 0 17.2175 0 25.5853 0C204.401 0 312.213 0 498 0V77H0C0 49.7955 0 33.4039 0 8.26054C0 5.61177 0 2.86589 0 0Z"
+                                                            fill="black" fill-opacity="0.5" />
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_b_118_75" x="-10" y="-10" width="518" height="97"
+                                                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feGaussianBlur in="BackgroundImageFix" stdDeviation="5" />
+                                                            <feComposite in2="SourceAlpha" operator="in"
+                                                                result="effect1_backgroundBlur_118_75" />
+                                                            <feBlend mode="normal" in="SourceGraphic"
+                                                                in2="effect1_backgroundBlur_118_75" result="shape" />
+                                                        </filter>
+                                                    </defs>
+                                                </svg>
+                                            </div>
                                         </div>
+                                        <div class="card__bottom-pseudo"></div>
                                     </div>
-                                    <div class="card__bottom-pseudo"></div>
                                 </div>
                             </div>
                         </div>

@@ -21,8 +21,12 @@
     min-width: 100vw;
     background-repeat: no-repeat;
     background-image:
-        url("../../img/sliders/headerSlider/1.jpg");
-    background-size: cover;
+        url("../img/sliders/headerSlider/1.jpg");
+    // background-size: cover;
+    // background-size: contain;
+    // object-fit: fill;
+    background-size: calc(100%) calc(100%);
+    // background-size: calc(100%) cover;
     transition: all ease-in-out 1s;
 
     &__inner{
@@ -40,6 +44,9 @@
         top: 70%;
         left: -40px;
         transform: rotate(-90deg);
+        @include mediaDesktopSm {
+                display: none;
+            }
     }
 
     // .baner__link
@@ -58,6 +65,7 @@
         line-height: 30px;
         letter-spacing: 7px;
         text-transform: uppercase;
+
 
         &::after {
             content: url("/img/header/icon.svg");
@@ -82,6 +90,14 @@
 
     &__content {
         width: 100%;
+
+        @include mediaTablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+        }
     }
 
     // .baner__title
@@ -90,7 +106,36 @@
 
     // .baner__slider
 
-    &__slider {}
+    &__slider {
+        // position: absolute;
+            // bottom: 2%;
+            // right: 5%;
+            transform: translate(100px, 0);
+            opacity: 0;
+
+            max-width: clamp(26.875rem, 19.425rem + 37.25vw, 64.125rem);
+            // max-width: clamp(25rem, 4.99rem + 47.79vw, 64.125rem);
+            overflow: hidden;
+        
+            // @include mediaMobile {
+            //     max-width: clamp(9.375rem, 6.518rem + 14.29vw, 12.5rem);
+            // }
+    }
+
+    &__slider-wrapper{
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        overflow: hidden;
+
+        @include mediaTablet{
+            justify-content: center;
+        }
+    }
 
 
     &__subtitle {
@@ -101,6 +146,9 @@
     &__btn {
         margin-left: -23px;
         margin-top: 30px;
+        @include mediaTablet{
+            display: none;
+        }
     }
 
 }
@@ -110,9 +158,9 @@
     font-family: Bayon;
     color: transparent;
     -webkit-text-stroke: 1px rgba(220, 193, 82, 1);
-    font-size: clamp(2.188rem, 0.801rem + 6.93vw, 6rem);
+    // font-size: clamp(2.188rem, 0.801rem + 6.93vw, 6rem);
     font-weight: 400;
-    line-height: clamp(2.188rem, 0.71rem + 7.39vw, 6.25rem);
+    // line-height: clamp(2.188rem, 0.71rem + 7.39vw, 6.25rem);
     letter-spacing: 2.88px;
     text-transform: capitalize;
     display: inline-block;
